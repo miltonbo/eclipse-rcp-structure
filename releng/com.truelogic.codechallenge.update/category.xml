@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.truelogic.codechallenge.feature_1.0.0.qualifier.jar" id="com.truelogic.codechallenge.feature" version="1.0.0.qualifier">
+      <category name="tychoexample"/>
+   </feature>
+   <category-def name="tychoexample" label="Tycho example"/>
+</site>

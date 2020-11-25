@@ -1,0 +1,21 @@
+<project>
+ <modelVersion>4.0.0</modelVersion>
+ <groupId>com.truelogic.codechallenge</groupId>
+ <artifactId>com.truelogic.codechallenge.root</artifactId>
+ <version>1.0.0-SNAPSHOT</version>
+ <packaging>pom</packaging>
+ <parent>
+   	<groupId>com.truelogic.codechallenge</groupId>
+   	<artifactId>com.truelogic.codechallenge.configuration</artifactId>
+   	<version>1.0.0-SNAPSHOT</version>
+  	<relativePath>./releng/com.truelogic.codechallenge.configuration</relativePath>
+ </parent>
+
+ <modules>
+ 	<module>bundles</module>
+ 	<module>features</module>
+ 	<module>releng</module>
+ 	<module>tests</module>
+ </modules>
+ 
+</project>

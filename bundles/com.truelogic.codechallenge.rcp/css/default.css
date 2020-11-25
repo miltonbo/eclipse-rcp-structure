@@ -1,0 +1,81 @@
+Label {
+	font: 11px;
+	color: black;
+}
+
+Composite Label {
+	font: 11px BOLD;
+	color: black;
+}
+
+Text {
+	font: 12px;
+}
+
+Spinner {
+	font: 12px;
+}
+
+Button {
+	font: 11px;
+}
+
+/* Identifies only those SWT Text elements
+appearing within a Composite */
+Composite Text {
+	background-color: white;
+	color: black;
+}
+
+SashForm {
+	
+}
+/* background uses a gradient */
+.MTrimBar {
+	color: white;
+	font: 13px;
+}
+
+Shell {
+	
+}
+
+.field-label {
+	font: 11px BOLD;
+}
+
+.h1 {
+	font: 22px BOLD;
+}
+
+.h2 {
+	font: 18px BOLD;
+}
+
+.h3 {
+	font: 16px BOLD;
+}
+
+.h4 {
+	font: 14px BOLD;
+}
+
+.h5 {
+	font: 13px BOLD;
+}
+
+.h6 {
+	font: 11px BOLD;
+}
+
+.h7 {
+	font: 9px;
+}
+
+.simple-label {
+	font: 11px;
+}
+
+#ticketPriceLabel {
+	font: 30px BOLD;
+}

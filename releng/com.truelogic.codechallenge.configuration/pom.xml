@@ -1,0 +1,112 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.truelogic.codechallenge</groupId>
+	<artifactId>com.truelogic.codechallenge.configuration</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<tycho.version>0.26.0</tycho.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<mars-repo.url>http://download.eclipse.org/releases/neon
+		</mars-repo.url>
+		<jersey2.version>2.25</jersey2.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+		    <groupId>org.eclipse.platform</groupId>
+		    <artifactId>jface.examples.databinding</artifactId>
+		    <version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.10.19</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.2</version>
+		</dependency>
+	</dependencies>
+
+	<!-- <repositories> -->
+	<!-- <repository> -->
+	<!-- <id>mars</id> -->
+	<!-- <url>${mars-repo.url}</url> -->
+	<!-- <layout>p2</layout> -->
+	<!-- </repository> -->
+	<!-- </repositories> -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<extensions>true</extensions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<pomDependencies>consider</pomDependencies>
+					<target>
+						<artifact>
+							<groupId>com.truelogic.codechallenge</groupId>
+							<artifactId>com.truelogic.codechallenge.target</artifactId>
+							<version>1.0.0-SNAPSHOT</version>
+						</artifact>
+					</target>
+
+
+
+					<dependency-resolution>
+						<extraRequirements>
+							<requirement>
+								<type>eclipse-plugin</type>
+								<id>org.eclipse.equinox.event</id>
+								<versionRange>0.0.0</versionRange>
+							</requirement>
+						</extraRequirements>
+					</dependency-resolution>
+
+					<environments>
+<!-- 						<environment> -->
+<!-- 							<os>linux</os> -->
+<!-- 							<ws>gtk</ws> -->
+<!-- 							<arch>x86</arch> -->
+<!-- 						</environment> -->
+<!-- 						<environment> -->
+<!-- 							<os>linux</os> -->
+<!-- 							<ws>gtk</ws> -->
+<!-- 							<arch>x86_64</arch> -->
+<!-- 						</environment> -->
+<!-- 						<environment> -->
+<!-- 							<os>win32</os> -->
+<!-- 							<ws>win32</ws> -->
+<!-- 							<arch>x86</arch> -->
+<!-- 						</environment> -->
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+<!-- 						<environment> -->
+<!-- 							<os>macosx</os> -->
+<!-- 							<ws>cocoa</ws> -->
+<!-- 							<arch>x86_64</arch> -->
+<!-- 						</environment> -->
+					</environments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

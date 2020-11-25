@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0"
+	xmlns:xmi="http://www.omg.org/XMI"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application"
+	xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic"
+	xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu"
+	xmi:id="_k2qiMNvtEeaiutduG-fpww"
+	elementId="org.eclipse.e4.ide.application"
+	bindingContexts="_k2qiOdvtEeaiutduG-fpww">
+	<children xsi:type="basic:TrimmedWindow"
+		xmi:id="_k2qiMdvtEeaiutduG-fpww"
+		elementId="com.truelogic.codechallenge.rcp.trimmedwindow.taskmanager"
+		label="Code Challenge" x="0" y="0" width="1200"
+		height="700">
+		<children xsi:type="basic:PartSashContainer"
+			xmi:id="_qQRegPrWEeadSLVJbn63EA"
+			elementId="com.truelogic.codechallenge.rcp.partsashcontainer.0"
+			horizontal="true">
+			<children xsi:type="basic:PartStack"
+				xmi:id="_F-pYIPrZEeadSLVJbn63EA"
+				elementId="com.truelogic.codechallenge.rcp.partstack.0">
+				<children xsi:type="basic:Part"
+					xmi:id="_GdWtYPrZEeadSLVJbn63EA"
+					elementId="com.truelogic.codechallenge.rcp.part.main"
+					contributionURI="bundleclass://com.truelogic.codechallenge.rcp/com.truelogic.codechallenge.rcp.view.DefaultView"
+					label="Principal" />
+			</children>
+		</children>
+		<mainMenu xmi:id="_kFyqwNzxEeagbLSgtTcxDw"
+			elementId="org.eclipse.ui.main.menu">
+		</mainMenu>
+		<trimBars xmi:id="_bdqi0FLbEee2CYUyG2w6FA"
+			elementId="com.truelogic.codechallenge.rcp.trimbar.0">
+		</trimBars>
+		<trimBars xmi:id="_FiuEEIw3EeepAcLmdu8hUw"
+			elementId="com.truelogic.codechallenge.rcp.trimbar.1" side="Right">
+		</trimBars>
+	</children>
+	<bindingTables xmi:id="_GqgHEIpsEeebd8fTDRFFEA"
+		elementId="com.truelogic.codechallenge.rcp.bindingtable.0"
+		bindingContext="_k2qiOdvtEeaiutduG-fpww">
+	</bindingTables>
+	<rootContext xmi:id="_k2qiOdvtEeaiutduG-fpww"
+		elementId="org.eclipse.ui.contexts.dialogAndWindow"
+		name="In Dialog and Windows">
+	</rootContext>
+</application:Application>
